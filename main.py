@@ -39,18 +39,17 @@ def pagina_contacto():
     correo = st.text_input("Correo Electrónico")
     mensaje = st.text_area("Mensaje")
     enviar = st.form_submit_button("Enviar")
-
+    
   if enviar:
     # Validación de campos obligatorios
     if not nombre or not correo or not mensaje:
       st.warning("Por favor, completa todos los campos obligatorios.")
     else:
       # Procesamiento del formulario aquí
-      # Por ahora, simplemente mostraremos un mensaje de confirmación.
+      # Por ejemplo, puedes almacenar los datos en una base de datos
       st.success(f"Gracias por contactarnos, {nombre}! Hemos recibido tu mensaje.")
-        
-
-
+      # Agrega un botón para volver a la página de bienvenida
+      st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
