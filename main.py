@@ -18,10 +18,10 @@ def pagina_bienvenida():
     st.write("La reconexión magnética es un proceso importante en la interacción entre el viento solar y el campo magnético de la Tierra.")
     st.header("Cómo afecta la reconeccion magnetica")
     st.write("La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagneticos")
-    st.
-    # Botón
-    if st.button("¡Celebremos con globos!"):
-        st.balloons()
+    st.write("⊛ La calidad de Servicios")
+    st.write("⊛ Sistemas de navegacion")
+    st.write("⊛ Las comunicaciones")
+    st.write("⊛ Daña sistemas electronicas de naves espaciales")
 
 # Función para la página de información (Opción 2)
 def Datos():
