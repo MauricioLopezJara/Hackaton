@@ -32,13 +32,22 @@ def pagina_contacto():
   st.title("Contáctenos")
   st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
   
- # Formulario de contacto
+  # Formulario de contacto
   with st.form("formulario_contacto"):
-    nombre = st.text_input("Nombre", required=True)
-    correo = st.text_input("Correo Electrónico", required=True)
-    mensaje = st.text_area("Mensaje", required=True)
+    nombre = st.text_input("Nombre")
+    correo = st.text_input("Correo Electrónico")
+    mensaje = st.text_area("Mensaje")
     enviar = st.form_submit_button("Enviar")
-  # Agrega información de contacto si lo deseas
+
+  if enviar:
+    # Validación de campos obligatorios
+    if not nombre or not correo or not mensaje:
+      st.warning("Por favor, completa todos los campos obligatorios.")
+    else:
+      # Procesamiento del formulario aquí
+      # Por ahora, simplemente mostraremos un mensaje de confirmación.
+      st.success(f"Gracias por contactarnos, {nombre}! Hemos recibido tu mensaje.")
+
 
 
 # Título del menú
