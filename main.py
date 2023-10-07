@@ -29,17 +29,16 @@ def Datos():
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
-    st.title("Contáctenos")
-    st.title("Contáctenos")
-    st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
+  st.title("Contáctenos")
+  st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
   
-  # Formulario de contacto
+ # Formulario de contacto
   with st.form("formulario_contacto"):
     nombre = st.text_input("Nombre", required=True)
     correo = st.text_input("Correo Electrónico", required=True)
     mensaje = st.text_area("Mensaje", required=True)
     enviar = st.form_submit_button("Enviar")
-    # Agrega información de contacto si lo deseas
+  # Agrega información de contacto si lo deseas
 
 
 # Título del menú
