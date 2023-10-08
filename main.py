@@ -32,24 +32,18 @@ def Datos():
 def pagina_contacto():
   st.title("Contáctenos")
   st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
+  # Crea 3 columnas
+Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
+
+# Muestra la imagen en la columna central
+Uno_col.image("", width=200)
+Dos_col.image("", width=200)
+Tres_col.image("", width=200)
+Cuatro_col.image("",width=200)
+Cinco_col.image("",width=200)
+Seis_col.image("",width=200)
   
-  # Formulario de contacto
-  with st.form("formulario_contacto"):
-    nombre = st.text_input("Nombre")
-    correo = st.text_input("Correo Electrónico")
-    mensaje = st.text_area("Mensaje")
-    enviar = st.form_submit_button("Enviar")
-    
-  if enviar:
-    # Validación de campos obligatorios
-    if not nombre or not correo or not mensaje:
-      st.warning("Por favor, completa todos los campos obligatorios.")
-    else:
-      # Procesamiento del formulario aquí
-      # Por ejemplo, puedes almacenar los datos en una base de datos
-      st.success(f"Gracias por contactarnos, {nombre}! Hemos recibido tu mensaje.")
-      # Agrega un botón para volver a la página de bienvenida
-      st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
+  st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
