@@ -47,7 +47,7 @@ def pagina_contacto():
     ]
 
     # Muestra las imágenes como enlaces a perfiles de LinkedIn
-    for x in linkedin_links.items():
+    for x in linkedin_links:
            x["col"].image(x["img"])
 
 # Título del menú
