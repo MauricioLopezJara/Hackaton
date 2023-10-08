@@ -55,7 +55,7 @@ def Datos():
 
         # Muestra la figura en Streamlit
         st.pyplot(fig)
-    if st.button("Ejecutar Análisis de Datos"):
+    if st.button("Ejecutar Análisis de Datos 2"):
         fig = predict()  # Llama a la función de análisis y obtén la figura
 
         # Muestra la figura en Streamlit
