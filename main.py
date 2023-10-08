@@ -44,13 +44,13 @@ def pagina_contacto():
     Seis_col.image("6.png", width=110)
     
     #Crear 6 columnas 
-    one,two,tree,four,five,six = st.columns(6)
-    one.text("https://theblogmauriciol.wordpress.com/")
-    two.text("https://theblogmauriciol.wordpress.com/")
-    tree.text("https://theblogmauriciol.wordpress.com/")
-    four.text("https://theblogmauriciol.wordpress.com/")
-    five.text("https://theblogmauriciol.wordpress.com/")
-    six.text("https://theblogmauriciol.wordpress.com/")
+    #one,two,tree,four,five,six = st.columns(6)
+    #one.text("https://theblogmauriciol.wordpress.com/")
+    #two.text("https://theblogmauriciol.wordpress.com/")
+    #tree.text("https://theblogmauriciol.wordpress.com/")
+    #four.text("https://theblogmauriciol.wordpress.com/")
+    #five.text("https://theblogmauriciol.wordpress.com/")
+    #six.text("https://theblogmauriciol.wordpress.com/")
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
