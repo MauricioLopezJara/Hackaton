@@ -141,11 +141,4 @@ elif eleccion == "Datos":
 elif eleccion == "Contacto":
     pagina_contacto()
     
-sidebar_content = """
-
-<h2>Imagen en la parte inferior</h2>
-<p>Texto en la parte inferior de la barra lateral.</p>
-<img src="https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg" alt="Imagen en la parte inferior" style="display: block; margin-top: auto;">
-"""
-# Mostrar el contenido HTML en la barra lateral
-st.sidebar.markdown(sidebar_content, unsafe_allow_html=True)
+st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg", caption="Magnetic Reconnection", use_container_width=True)
