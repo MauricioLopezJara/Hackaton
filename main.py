@@ -41,7 +41,9 @@ def pagina_bienvenida():
         
     if st.button("2.- ¡Perturbaciones en la propagación de las ondas de radio!"):
         contador2 += 1
-        
+        if contador1 % 2 != 0:    
+        st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
+        else st.empty()
     if st.button("3.- ¡Cambio en la órbita de los satélites"):
         contador3 += 1
         
@@ -51,8 +53,7 @@ def pagina_bienvenida():
     if st.button("5.- ¡Tormentas geomagnéticas"):
         contador5 += 1
 
-    if contador1 % 2 != 0:    
-        st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
+    
     if contador2 % 2 != 0:
         st.write("""Los cambios en las condiciones ionosféricas y magnetosféricas durante los fenómenos de reconexión magnética pueden provocar interferencias que pueden afectar a las señales de comunicación de los satélites que atraviesan estas regiones.""")
     if contador3 % 2 !=0:
