@@ -85,12 +85,9 @@ def predict():
     
     df = pd.DataFrame([resp.json()["fechas"],resp.json()["pronostico"]])
     
-    
-
-
     # Crear una figura para la gráfica
     fig, ax = plt.subplots()
-    ax.plot(df)
+    ax.plot(np.array(df))
     ax.plot(resp.json()['index'], resp.json()["pronostico"][resp.json()['index']], "o")
 
     return fig  # Devuelve la figura
