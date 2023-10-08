@@ -37,8 +37,8 @@ def pagina_contacto():
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
     with Uno_col:
     st.image("1.png", width=110)
-    st.markdown("**Nombre:** Juan Pérez")
-    st.markdown("**Cargo:** Desarrollador web")
+    st.write("**Nombre:** Juan Pérez")
+    st.write("**Cargo:** Desarrollador web")
 
     with Dos_col:
     st.image("2.png", width=110)
