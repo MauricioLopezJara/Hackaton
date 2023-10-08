@@ -25,6 +25,11 @@ def pagina_bienvenida():
     st.header("Cómo afecta la reconexión magnética")
     st.write(
         "La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagnéticos")
+    # URL del video de YouTube
+    video_url = "https://www.youtube.com/watch?v=mgUZwoR0gcE"
+
+    # Mostrar el video de YouTube en la interfaz
+    st.video(video_url)
     # Botón
     if st.button("¡Celebremos!"):
         st.balloons()
