@@ -37,19 +37,18 @@ def pagina_contacto():
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
 
     # Crea enlaces a perfiles de LinkedIn
-    linkedin_links = {
-        "1.png": "https://theblogmauriciol.wordpress.com",
-        "2.png": "https://linkedin.com/in/perfil-2",
-        "3.png": "https://linkedin.com/in/perfil-3",
-        "4.png": "https://linkedin.com/in/perfil-4",
-        "5.png": "https://linkedin.com/in/perfil-5",
-        "6.png": "https://linkedin.com/in/perfil-6",
-    }
+    linkedin_links = [
+        {"img":"1.png", "link":"https://theblogmauriciol.wordpress.com","col":Uno_col},
+        {"img":"2.png", "link":"https://linkedin.com/in/perfil-2","col":Dos_col},
+        {"img":"3.png", "link":"https://linkedin.com/in/perfil-3","col":Tres_col},
+        {"img":"4.png", "link":"https://linkedin.com/in/perfil-4","col":Cuatro_col},
+        {"img":"5.png", "link":"https://linkedin.com/in/perfil-5","col":Cinco_col},
+        {"img":"6.png", "link":"https://linkedin.com/in/perfil-6","col":Seis_col}
+    ]
 
     # Muestra las imágenes como enlaces a perfiles de LinkedIn
-    for img_filename, linkedin_link in linkedin_links.items():
-        with Uno_col:
-           st.image(img_filename)
+    for x in linkedin_links.items():
+           x["col"].image(img_filename)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
