@@ -88,7 +88,7 @@ def predict():
     # Crear una figura para la gráfica
     fig, ax = plt.subplots()
     ax.plot(df['fechas'],df['valores'])
-    #ax.plot(pd.DataFrame(resp.json()['warning_dates']), "o")
+    ax.plot(df['valores'][resp.json()['warning_dates'][index]], "o")
 
     return fig  # Devuelve la figura
 
