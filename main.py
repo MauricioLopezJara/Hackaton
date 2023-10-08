@@ -1,5 +1,7 @@
 import streamlit as st
 
+# Variable de estado para controlar la página actual
+pagina_actual = "Bienvenida"
 # Configuración de la página
 st.set_page_config(
     page_title="NASA Reconexión Magnética",
@@ -10,6 +12,8 @@ st.set_page_config(
 # Función para la página de bienvenida
 # Función para la página de bienvenida
 def pagina_bienvenida():
+    global pagina_actual
+    pagina_actual = "Bienvenida"
     # Crea 3 columnas
     left_col, mid_col, right_col = st.columns(3)
 
@@ -21,9 +25,9 @@ def pagina_bienvenida():
     st.header("Cómo afecta la reconeccion magnetica")
     st.write(
         "La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagneticos")
-    # Botón
-    if st.button("¡Celebremos con globos!"):
-        st.balloons()
+    # Botón para volver a la página de bienvenida
+    if st.button("Volver a la página de bienvenida"):
+        pagina_bienvenida()
 
 
 # Función para la página de información (Opción 2)
