@@ -128,7 +128,7 @@ def pagina_contacto():
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
-st.sidebar.image("")
+st.sidebar.image("Reconexion.jpeg")
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos", "Contacto"]
