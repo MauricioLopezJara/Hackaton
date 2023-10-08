@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import scipy as sp
 import requests
-import numphy as np
+import numpy as np
 
 # Configuración de la página
 st.set_page_config(
