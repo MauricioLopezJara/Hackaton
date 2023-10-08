@@ -19,7 +19,7 @@ def pagina_bienvenida():
     st.header("Cómo afecta la reconeccion magnetica")
     st.write("La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagneticos")
     # Botón
-    if st.button("¡Celebremos con globos!"):
+    if st.button("¡Celebremos!"):
         st.balloons()
 
 
@@ -33,15 +33,25 @@ def Datos():
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
+
     # Crea 3 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
-    # Muestra la imagen en la columna central de la función de contacto
-    Uno_col.image("1.png", width=110)
-    Dos_col.image("2.png", width=110)
-    Tres_col.image("3.png", width=110)
-    Cuatro_col.image("4.png", width=110)
-    Cinco_col.image("5.png", width=110)
-    Seis_col.image("6.png", width=110)
+
+    # Crea enlaces a perfiles de LinkedIn
+    linkedin_links = {
+        "1.png": "https://theblogmauriciol.wordpress.com",
+        "2.png": "https://theblogmauriciol.wordpress.com",
+        "3.png": "https://theblogmauriciol.wordpress.com",
+        "4.png": "https://theblogmauriciol.wordpress.com",
+        "5.png": "https://theblogmauriciol.wordpress.com",
+        "6.png": "https://theblogmauriciol.wordpress.com",
+    }
+
+    # Muestra las imágenes como enlaces a perfiles de LinkedIn
+    for img_filename, linkedin_link in linkedin_links.items():
+        with Uno_col:
+            st.markdown(f'<a href="{linkedin_link}" target="_blank"><img src="{img_filename}" width="110"></a>', unsafe_allow_html=True)
+
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
