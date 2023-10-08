@@ -33,37 +33,39 @@ def Datos():
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
+    
     # Crea 6 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
+
     with Uno_col:
-    st.image("1.png", width=110)
-    st.write("**Nombre:** Juan Pérez")
-    st.write("**Cargo:** Desarrollador web")
+        st.image("1.png", width=110)
+        st.markdown("**Nombre:** Juan Pérez")
+        st.markdown("**Cargo:** Desarrollador web")
 
     with Dos_col:
-    st.image("2.png", width=110)
-    st.markdown("**Nombre:** María López")
-    st.markdown("**Cargo:** Diseñadora gráfica")
+        st.image("2.png", width=110)
+        st.markdown("**Nombre:** María López")
+        st.markdown("**Cargo:** Diseñadora gráfica")
 
     with Tres_col:
-    st.image("3.png", width=110)
-    st.markdown("**Nombre:** Juan Pérez")
-    st.markdown("**Cargo:** Desarrollador web")
+        st.image("3.png", width=110)
+        st.markdown("**Nombre:** Juan Pérez")
+        st.markdown("**Cargo:** Desarrollador web")
 
     with Cuatro_col:
-    st.image("4.png", width=110)
-    st.markdown("**Nombre:** María López")
-    st.markdown("**Cargo:** Diseñadora gráfica")
+        st.image("4.png", width=110)
+        st.markdown("**Nombre:** María López")
+        st.markdown("**Cargo:** Diseñadora gráfica")
 
     with Cinco_col:
-    st.image("5.png", width=110)
-    st.markdown("**Nombre:** Juan Pérez")
-    st.markdown("**Cargo:** Desarrollador web")
+        st.image("5.png", width=110)
+        st.markdown("**Nombre:** Juan Pérez")
+        st.markdown("**Cargo:** Desarrollador web")
 
     with Seis_col:
-    st.image("6.png", width=110)
-    st.markdown("**Nombre:** María López")
-    st.markdown("**Cargo:** Diseñadora gráfica")
+        st.image("6.png", width=110)
+        st.markdown("**Nombre:** María López")
+        st.markdown("**Cargo:** Diseñadora gráfica")
     # Muestra la imagen en la columna central de la función de contacto
     #Uno_col.image("1.png", width=110)
     
