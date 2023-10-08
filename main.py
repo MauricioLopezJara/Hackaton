@@ -37,21 +37,18 @@ def pagina_contacto():
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
     # Muestra la imagen en la columna central de la función de contacto
     Uno_col.image("1.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     Dos_col.image("2.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     Tres_col.image("3.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     Cuatro_col.image("4.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     Cinco_col.image("5.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     Seis_col.image("6.png", width=110)
+    st.text("https://theblogmauriciol.wordpress.com/")
     
-    #Crear 6 columnas 
-    #one,two,tree,four,five,six = st.columns(6)
-    #one.text("https://theblogmauriciol.wordpress.com/")
-    #two.text("https://theblogmauriciol.wordpress.com/")
-    #tree.text("https://theblogmauriciol.wordpress.com/")
-    #four.text("https://theblogmauriciol.wordpress.com/")
-    #five.text("https://theblogmauriciol.wordpress.com/")
-    #six.text("https://theblogmauriciol.wordpress.com/")
-
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
 
