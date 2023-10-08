@@ -20,27 +20,20 @@ def pagina_bienvenida():
     # Muestra la imagen en la columna central
     mid_col.image("Nasa.png", width=200)
     st.title("Bienvenido a la página de la NASA sobre la Reconexión Magnética de la Tierra")
-    st.write(
-        """La reconexión magnética es un proceso en el que las líneas de campo magnético de diferentes dominios
-        magnéticos se rompen, se vuelven a conectar y crean nuevas configuraciones. En este fenómeno, las líneas
-        de campo magnético se aproximan entre sí y se vuelven antiparalelas; las fuerzas de tensión magnética 
-        impiden la colisión inmediata y conducen a la formación de una fina capa de corriente denominada 
-        "región de difusión". En la región de difusión, las líneas de campo magnético se rompen y vuelven a 
-        conectarse, y el proceso libera energía magnética, convirtiéndola en energía cinética y calor. 
-        Comprender la reconexión magnética es crucial para estudiar la física solar y espacial, así como para 
-        predecir y mitigar los impactos de los fenómenos meteorológicos espaciales en sistemas tecnológicos 
-        como los satélites y las redes eléctricas.""")
+    st.write("""La reconexión magnética es un proceso en el que las líneas de campo magnético de diferentes dominios magnéticos se rompen, se vuelven a conectar y crean nuevas configuraciones. En este fenómeno, las líneas de campo magnético se aproximan entre sí y se vuelven antiparalelas; las fuerzas de tensión magnética impiden la colisión inmediata y conducen a la formación de una fina capa de corriente denominada "región de difusión". En la región de difusión, las líneas de campo magnético se rompen y vuelven a conectarse, y el proceso libera energía magnética, convirtiéndola en energía cinética y calor. Comprender la reconexión magnética es crucial para estudiar la física solar y espacial, así como para predecir y mitigar los impactos de los fenómenos meteorológicos espaciales en sistemas tecnológicos como los satélites y las redes eléctricas.""")
     st.header("Cómo afecta la reconexión magnética")
     st.write(
         "")
+    st.write("""La reconexión magnética puede tener varios efectos en los satélites y sistemas espaciales. Éstas son algunas de las formas en que puede afectarles:""")
     # URL del video de YouTube
     video_url = "https://www.youtube.com/watch?v=mgUZwoR0gcE"
 
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
     # Botón
-    if st.button("¡Celebremos!"):
-        st.balloons()
+    st.button("¡1.- Daño a los sistemas satelitales!")
+    st.button("¡2.- Perturbaciones en la propagación de las ondas de radio!")
+        
 
 # Función para la página de información (Opción 2)
 def Datos():
