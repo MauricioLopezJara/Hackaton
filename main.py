@@ -38,7 +38,7 @@ def pagina_contacto():
 
     # Crea enlaces a perfiles de LinkedIn
     linkedin_links = {
-        "1.png": "https://linkedin.com/in/perfil-1",
+        "1.png": "https://theblogmauriciol.wordpress.com",
         "2.png": "https://linkedin.com/in/perfil-2",
         "3.png": "https://linkedin.com/in/perfil-3",
         "4.png": "https://linkedin.com/in/perfil-4",
