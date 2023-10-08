@@ -38,7 +38,7 @@ def pagina_contacto():
     # Muestra la imagen en la columna central de la función de contacto
     Uno_col.image("1.png", width=110)
     st.write(" ")
-    st.write("https://theblogmauriciol.wordpress.com/")
+    st.write("https://n9.cl/oka1y")
     Dos_col.image("2.png", width=110)
     
     Tres_col.image("3.png", width=110)
