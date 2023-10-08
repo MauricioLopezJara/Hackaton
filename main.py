@@ -29,26 +29,27 @@ def Datos():
     # Agrega más contenido informativo aquí si lo deseas
 
 
+# Función para la página de contacto (Opción 3)
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
-
-    # Crea 3 columnas
+    # Crea 6 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
-
-    # Crea enlaces a perfiles de LinkedIn
-    linkedin_links = [
-        {"img":"1.png", "link":"https://theblogmauriciol.wordpress.com","col":Uno_col},
-        {"img":"2.png", "link":"https://linkedin.com/in/perfil-2","col":Dos_col},
-        {"img":"3.png", "link":"https://linkedin.com/in/perfil-3","col":Tres_col},
-        {"img":"4.png", "link":"https://linkedin.com/in/perfil-4","col":Cuatro_col},
-        {"img":"5.png", "link":"https://linkedin.com/in/perfil-5","col":Cinco_col},
-        {"img":"6.png", "link":"https://linkedin.com/in/perfil-6","col":Seis_col}
-    ]
-
-    # Muestra las imágenes como enlaces a perfiles de LinkedIn
-    for x in linkedin_links:
-            x["col"].markdown(f'<a href="{x["link"]}" target="_blank"><img src="{x["img"]}" width="110"><\a>',unsafe_allow_html=True) 
+    # Muestra la imagen en la columna central de la función de contacto
+    Uno_col.image("1.png", width=110)
+    Dos_col.image("2.png", width=110)
+    Tres_col.image("3.png", width=110)
+    Cuatro_col.image("4.png", width=110)
+    Cinco_col.image("5.png", width=110)
+    Seis_col.image("6.png", width=110)
+    #Crear 6 columnas 
+    one,two,tree,four,five,six = st.columns(6)
+    one.text("https://theblogmauriciol.wordpress.com/")
+    two.text("https://theblogmauriciol.wordpress.com/")
+    tree.text("https://theblogmauriciol.wordpress.com/")
+    four.text("https://theblogmauriciol.wordpress.com/")
+    five.text("https://theblogmauriciol.wordpress.com/")
+    six.text("https://theblogmauriciol.wordpress.com/")
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
