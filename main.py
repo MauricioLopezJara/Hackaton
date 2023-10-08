@@ -42,6 +42,7 @@ def pagina_contacto():
     Cuatro_col.image("4.png", width=110)
     Cinco_col.image("5.png", width=110)
     Seis_col.image("6.png", width=110)
+    
     #Crear 6 columnas 
     one,two,tree,four,five,six = st.columns(6)
     one.text("https://theblogmauriciol.wordpress.com/")
