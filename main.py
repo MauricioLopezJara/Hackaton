@@ -38,15 +38,19 @@ def pagina_contacto():
     # Muestra la imagen en la columna central de la función de contacto
     Uno_col.image("1.png", width=110)
     st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=10)
+    st.write("https://n9.cl/oka1y", fontsize=8)
     Dos_col.image("2.png", width=110)
-    
+    st.write(" ")
+    st.write("https://n9.cl/oka1y", fontsize=8)
     Tres_col.image("3.png", width=110)
-    
+    st.write(" ")
+    st.write("https://n9.cl/oka1y", fontsize=8)
     Cuatro_col.image("4.png", width=110)
-   
+    st.write(" ")
+    st.write("https://n9.cl/oka1y", fontsize=8)
     Cinco_col.image("5.png", width=110)
-    
+    st.write(" ")
+    st.write("https://n9.cl/oka1y", fontsize=8)
     Seis_col.image("6.png", width=110)
     
     
