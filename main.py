@@ -128,7 +128,7 @@ def pagina_contacto():
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
-st.sidebar.image("Reconexion.jpeg")
+
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos", "Contacto"]
@@ -141,4 +141,5 @@ elif eleccion == "Datos":
     Datos()
 elif eleccion == "Contacto":
     pagina_contacto()
-    
+st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg", caption="Descripción de la imagen", use_container_width=True)
+#st.sidebar.image("Reconexion.jpeg")
