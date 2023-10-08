@@ -1,11 +1,6 @@
 import streamlit as st
-# Contenido de la página según la elección
-if eleccion == "Bienvenida":
-    pagina_bienvenida()
-elif eleccion == "Datos":
-    Datos()
-elif eleccion == "Contacto":
-    pagina_contacto()
+opciones = ["Bienvenida", "Datos", "Contacto"]
+eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 # Configuración de la página
 st.set_page_config(
     page_title="NASA Reconexión Magnética",
@@ -60,7 +55,12 @@ def pagina_contacto():
 st.sidebar.markdown("Bienvenido al Menu")
 
 # Elementos del menú
-opciones = ["Bienvenida", "Datos", "Contacto"]
-eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
 
+# Contenido de la página según la elección
+if eleccion == "Bienvenida":
+    pagina_bienvenida()
+elif eleccion == "Datos":
+    Datos()
+elif eleccion == "Contacto":
+    pagina_contacto()
