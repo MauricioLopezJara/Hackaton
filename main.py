@@ -6,7 +6,15 @@ st.set_page_config(
     page_icon="🌌",
     layout="centered"
 )
+# Título del menú
+st.sidebar.markdown("Bienvenido al Menu")
 
+# Elementos del menú
+
+
+# Contenido de la página según la elección
+opciones = ["Bienvenida", "Datos", "Contacto"]
+eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 # Función para la página de bienvenida
 # Función para la página de bienvenida
 def pagina_bienvenida():
@@ -50,15 +58,7 @@ def pagina_contacto():
     Seis_col.image("6.png", width=110)
 
 
-# Título del menú
-st.sidebar.markdown("Bienvenido al Menu")
 
-# Elementos del menú
-
-
-# Contenido de la página según la elección
-opciones = ["Bienvenida", "Datos", "Contacto"]
-eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 if eleccion == "Bienvenida":
     pagina_bienvenida()
 elif eleccion == "Datos":
