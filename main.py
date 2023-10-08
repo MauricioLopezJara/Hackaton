@@ -29,9 +29,9 @@ def pagina_bienvenida():
     st.write(
         "La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagneticos")
     # Botón para volver a la página de bienvenida
-    if st.button("Volver a la página de bienvenida"):
-        pagina_bienvenida()
-
+    
+def sendToBienvenida():
+    eleccion = "Bienvenida"
 
 # Función para la página de información (Opción 2)
 def Datos():
@@ -43,7 +43,7 @@ def Datos():
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
-    st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
+    st.button("Volver a la página de bienvenida", on_click=sendToBienvenida)
     # Crea 3 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
 
