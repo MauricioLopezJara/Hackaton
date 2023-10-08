@@ -21,7 +21,15 @@ def pagina_bienvenida():
     mid_col.image("Nasa.png", width=200)
     st.title("Bienvenido a la página de la NASA sobre la Reconexión Magnética de la Tierra")
     st.write(
-        "La reconexión magnética es un proceso en el que las líneas de campo magnético de diferentes dominios magnéticos se rompen, se vuelven a conectar y crean nuevas configuraciones. En este fenómeno, las líneas de campo magnético se aproximan entre sí y se vuelven antiparalelas; las fuerzas de tensión magnética impiden la colisión inmediata y conducen a la formación de una fina capa de corriente denominada "región de difusión". En la región de difusión, las líneas de campo magnético se rompen y vuelven a conectarse, y el proceso libera energía magnética, convirtiéndola en energía cinética y calor. Comprender la reconexión magnética es crucial para estudiar la física solar y espacial, así como para predecir y mitigar los impactos de los fenómenos meteorológicos espaciales en sistemas tecnológicos como los satélites y las redes eléctricas.")
+        "La reconexión magnética es un proceso en el que las líneas de campo magnético de diferentes dominios
+        magnéticos se rompen, se vuelven a conectar y crean nuevas configuraciones. En este fenómeno, las líneas
+        de campo magnético se aproximan entre sí y se vuelven antiparalelas; las fuerzas de tensión magnética 
+        impiden la colisión inmediata y conducen a la formación de una fina capa de corriente denominada 
+        "región de difusión". En la región de difusión, las líneas de campo magnético se rompen y vuelven a 
+        conectarse, y el proceso libera energía magnética, convirtiéndola en energía cinética y calor. 
+        Comprender la reconexión magnética es crucial para estudiar la física solar y espacial, así como para 
+        predecir y mitigar los impactos de los fenómenos meteorológicos espaciales en sistemas tecnológicos 
+        como los satélites y las redes eléctricas.")
     st.header("Cómo afecta la reconexión magnética")
     st.write(
         "")
