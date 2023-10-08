@@ -74,6 +74,21 @@ def analyze_data():
     ax.plot(time, value, "o")
 
     return fig  # Devuelve la figura
+def predict():
+    url="https://DanielPerez.pythonanywhere.com/predictions/"
+    resp = requests.get(url)
+    
+    df = pd.DataFrame([resp.json()["fechas"],resp.json()["pronostico"]])
+    
+    
+
+
+    # Crear una figura para la gráfica
+    fig, ax = plt.subplots()
+    ax.plot(df)
+    ax.plot(resp.json()['index'], resp.json()["pronostico"][resp.json()['index']], "o")
+
+    return fig  # Devuelve la figura
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
