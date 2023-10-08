@@ -45,7 +45,7 @@ def Datos():
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
-    st.button("Volver a la página de bienvenida", on_click=sendToBienvenida)
+    #st.button("Volver a la página de bienvenida", on_click=sendToBienvenida)
     # Crea 3 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
 
@@ -56,6 +56,7 @@ def pagina_contacto():
     Cuatro_col.image("4.png", width=110)
     Cinco_col.image("5.png", width=110)
     Seis_col.image("6.png", width=110)
+    st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
 
 
 
