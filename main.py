@@ -34,6 +34,7 @@ def pagina_bienvenida():
     
 def sendToBienvenida():
     eleccion = "Bienvenida"
+    pagina_bienvenida()
 
 # Función para la página de información (Opción 2)
 def Datos():
@@ -56,7 +57,7 @@ def pagina_contacto():
     Cuatro_col.image("4.png", width=110)
     Cinco_col.image("5.png", width=110)
     Seis_col.image("6.png", width=110)
-    st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
+    st.button("Volver a la página de bienvenida", on_click=sendToBienvenida)
 
 
 
