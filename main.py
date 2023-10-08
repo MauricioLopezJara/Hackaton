@@ -41,8 +41,9 @@ def pagina_contacto():
         st.image("1.png", width=110)
         st.markdown("**Nombre:** Angelica")
         st.markdown("**Cargo:** Desarrollador web")
-        link = '<a href="http://www.facebook.com" target="_blank">Linkedin</a>'
+        link = '<a href="http://www.facebook.com" target="_blank">Link</a>'
         st.markdown(link, unsafe_allow_html=True)
+
 
     with Dos_col:
         st.image("2.png", width=110)
