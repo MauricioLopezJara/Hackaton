@@ -34,6 +34,8 @@ def pagina_bienvenida():
     
 def sendToBienvenida():
     eleccion = "Bienvenida"
+    opciones = ["Bienvenida", "Datos", "Contacto"]
+    eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
     pagina_bienvenida()
 
 # Función para la página de información (Opción 2)
