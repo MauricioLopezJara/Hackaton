@@ -32,11 +32,6 @@ def pagina_bienvenida():
         "La reconexión magnética puede tener un impacto en la calidad de servicios generados por medio de campos electromagneticos")
     # Botón para volver a la página de bienvenida
     
-def sendToBienvenida():
-    eleccion = "Bienvenida"
-    opciones = ["Bienvenida", "Datos", "Contacto"]
-    eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
-    pagina_bienvenida()
 
 # Función para la página de información (Opción 2)
 def Datos():
@@ -59,7 +54,6 @@ def pagina_contacto():
     Cuatro_col.image("4.png", width=110)
     Cinco_col.image("5.png", width=110)
     Seis_col.image("6.png", width=110)
-    st.button("Volver a la página de bienvenida", on_click=sendToBienvenida)
 
 
 
