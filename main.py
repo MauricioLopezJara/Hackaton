@@ -29,7 +29,6 @@ def Datos():
     # Agrega más contenido informativo aquí si lo deseas
 
 
-# Función para la página de contacto (Opción 3)
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
@@ -39,19 +38,18 @@ def pagina_contacto():
 
     # Crea enlaces a perfiles de LinkedIn
     linkedin_links = {
-        "1.png": "https://theblogmauriciol.wordpress.com",
-        "2.png": "https://theblogmauriciol.wordpress.com",
-        "3.png": "https://theblogmauriciol.wordpress.com",
-        "4.png": "https://theblogmauriciol.wordpress.com",
-        "5.png": "https://theblogmauriciol.wordpress.com",
-        "6.png": "https://theblogmauriciol.wordpress.com",
+        "1.png": "https://linkedin.com/in/perfil-1",
+        "2.png": "https://linkedin.com/in/perfil-2",
+        "3.png": "https://linkedin.com/in/perfil-3",
+        "4.png": "https://linkedin.com/in/perfil-4",
+        "5.png": "https://linkedin.com/in/perfil-5",
+        "6.png": "https://linkedin.com/in/perfil-6",
     }
 
     # Muestra las imágenes como enlaces a perfiles de LinkedIn
     for img_filename, linkedin_link in linkedin_links.items():
         with Uno_col:
             st.markdown(f'<a href="{linkedin_link}" target="_blank"><img src="{img_filename}" width="110"></a>', unsafe_allow_html=True)
-
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
