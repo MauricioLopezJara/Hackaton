@@ -39,15 +39,15 @@ def pagina_contacto():
     # Crea 3 columnas
 
 
-Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
+    Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
 
-# Muestra la imagen en la columna central
-Uno_col.image("1.png", width=110)
-Dos_col.image("2.png", width=110)
-Tres_col.image("3.png", width=110)
-Cuatro_col.image("4.png", width=110)
-Cinco_col.image("5.png", width=110)
-Seis_col.image("6.png", width=110)
+    # Muestra la imagen en la columna central
+    Uno_col.image("1.png", width=110)
+    Dos_col.image("2.png", width=110)
+    Tres_col.image("3.png", width=110)
+    Cuatro_col.image("4.png", width=110)
+    Cinco_col.image("5.png", width=110)
+    Seis_col.image("6.png", width=110)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
