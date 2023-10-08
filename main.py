@@ -31,16 +31,40 @@ def pagina_bienvenida():
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
     # Botón
+    contador1 = 0
+    contador2 = 0
+    contador3 = 0
+    contador4 = 0
+    contador5 = 0
     if st.button("1.- ¡Daño a los sistemas satelitales!"):
-        st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
+        contador1 += 1
+        
     if st.button("2.- ¡Perturbaciones en la propagación de las ondas de radio!"):
-        st.write("""Los cambios en las condiciones ionosféricas y magnetosféricas durante los fenómenos de reconexión magnética pueden provocar interferencias que pueden afectar a las señales de comunicación de los satélites que atraviesan estas regiones.""")
+        contador2 += 1
+        
     if st.button("3.- ¡Cambio en la órbita de los satélites"):
-        st.write(""" La interacción de los satélites con los campos magnéticos perturbados durante los fenómenos de reconexión puede inducir cambios en sus órbitas. Aunque este efecto es generalmente pequeño para la mayoría de los satélites, es algo que debe tenerse en cuenta.""")
+        contador3 += 1
+        
     if st.button("4.- ¡Errores de navegación"):
-        st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
+        contador4 += 1
+        
     if st.button("5.- ¡Tormentas geomagnéticas"):
-        st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")    
+        contador5 += 1
+
+    if contador1 % 2 != 0:    
+        st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
+    if contador2 % 2 != 0:
+        st.write("""Los cambios en las condiciones ionosféricas y magnetosféricas durante los fenómenos de reconexión magnética pueden provocar interferencias que pueden afectar a las señales de comunicación de los satélites que atraviesan estas regiones.""")
+    if contador3 % 2 !=0:
+        st.write(""" La interacción de los satélites con los campos magnéticos perturbados durante los fenómenos de reconexión puede inducir cambios en sus órbitas. Aunque este efecto es generalmente pequeño para la mayoría de los satélites, es algo que debe tenerse en cuenta.""")
+    if contador4 % 2 !=0:
+        st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
+    if contador5 % 2 !=0:
+        st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")  
+#Textos 
+        
+        
+          
 
 # Función para la página de información (Opción 2)
 def Datos():
