@@ -42,7 +42,7 @@ def Datos():
 
 # Función para analizar los datos
 def analyze_data():
-   url="https://danielperez.pythonanywhere.com/get_past_peeks/"
+    url="https://danielperez.pythonanywhere.com/get_past_peeks/"
     resp = requests.get(url)
     
     df = pd.DataFrame(resp.json()["DataFrame"].values(),index=resp.json()["DataFrame"].keys())
