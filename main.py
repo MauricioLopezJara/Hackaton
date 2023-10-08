@@ -36,20 +36,19 @@ def Datos():
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
+    st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
     # Crea 3 columnas
+    Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
+
+    # Muestra la imagen en la columna central
+    Uno_col.image("1.png", width=100)
+    Dos_col.image("2.png", width=100)
+    Tres_col.image("3.png", width=100)
+    Cuatro_col.image("4.png", width=100)
+    Cinco_col.image("5.png", width=100)
+    Seis_col.image("6.png", width=100)
 
 
-Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
-
-# Muestra la imagen en la columna central
-Uno_col.image("1.png", width=200)
-Dos_col.image("2.png", width=200)
-Tres_col.image("3.png", width=200)
-Cuatro_col.image("4.png", width=200)
-Cinco_col.image("5.png", width=200)
-Seis_col.image("6.png", width=200)
-
-st.button("Volver a la página de bienvenida", on_click=pagina_bienvenida)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
