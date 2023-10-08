@@ -48,7 +48,7 @@ def pagina_contacto():
 
     # Muestra las imágenes como enlaces a perfiles de LinkedIn
     for x in linkedin_links.items():
-           x["col"].image(img_filename)
+           x["col"].image(x["img"])
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
