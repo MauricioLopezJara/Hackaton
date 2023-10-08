@@ -35,23 +35,47 @@ def pagina_contacto():
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
     # Crea 6 columnas
     Uno_col, Dos_col, Tres_col, Cuatro_col, Cinco_col, Seis_col = st.columns(6)
+    with Uno_col:
+    st.image("1.png", width=110)
+    st.markdown("**Nombre:** Juan Pérez")
+    st.markdown("**Cargo:** Desarrollador web")
+
+    with Dos_col:
+    st.image("2.png", width=110)
+    st.markdown("**Nombre:** María López")
+    st.markdown("**Cargo:** Diseñadora gráfica")
+
+    with Tres_col:
+    st.image("3.png", width=110)
+    st.markdown("**Nombre:** Juan Pérez")
+    st.markdown("**Cargo:** Desarrollador web")
+
+    with Cuatro_col:
+    st.image("4.png", width=110)
+    st.markdown("**Nombre:** María López")
+    st.markdown("**Cargo:** Diseñadora gráfica")
+
+    with Cinco_col:
+    st.image("5.png", width=110)
+    st.markdown("**Nombre:** Juan Pérez")
+    st.markdown("**Cargo:** Desarrollador web")
+
+    with Seis_col:
+    st.image("6.png", width=110)
+    st.markdown("**Nombre:** María López")
+    st.markdown("**Cargo:** Diseñadora gráfica")
     # Muestra la imagen en la columna central de la función de contacto
-    Uno_col.image("1.png", width=110)
-    st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=6)
-    Dos_col.image("2.png", width=110)
-    st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=6)
-    Tres_col.image("3.png", width=110)
-    st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=6)
-    Cuatro_col.image("4.png", width=110)
-    st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=6)
-    Cinco_col.image("5.png", width=110)
-    st.write(" ")
-    st.write("https://n9.cl/oka1y", fontsize=6)
-    Seis_col.image("6.png", width=110)
+    #Uno_col.image("1.png", width=110)
+    
+    #Dos_col.image("2.png", width=110)
+    
+    #Tres_col.image("3.png", width=110)
+    
+    #Cuatro_col.image("4.png", width=110)
+    
+    #Cinco_col.image("5.png", width=110)
+    
+    #Seis_col.image("6.png", width=110)
     
     
 # Título del menú
