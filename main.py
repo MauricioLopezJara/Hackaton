@@ -141,4 +141,4 @@ elif eleccion == "Datos":
 elif eleccion == "Contacto":
     pagina_contacto()
     
-st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg", caption="Magnetic Reconnection", use_container_width=True)
+st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg")
