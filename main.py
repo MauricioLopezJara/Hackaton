@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import scipy as sp
+import requests
 
 # Configuración de la página
 st.set_page_config(
@@ -41,25 +42,20 @@ def Datos():
 
 # Función para analizar los datos
 def analyze_data():
-    headers = ['year', 'day', 'hour', 'B_scalar', 'Bz_GSM', 'Bz_GSE', 'SW_temperature', 'SW_proton_density',
-               'Plasma_Speed', 'Flow_pressure']
-    df = pd.read_csv('data1.txt', delim_whitespace=' ', names=headers)
-    # En este punto, puedes continuar con el código que proporcionaste para el análisis de datos.
-    # Asegúrate de que el código esté dentro de esta función.
-    df.max()
-    max_values = [9999, 999, 99, 99, 99, 99, 9999999.00, 999.90, 9999.00, 99.99]
-    df_raw = df[(df != max_values).all(axis=1)]
-    df_raw = df_raw.reset_index(drop=True)
-    data_to_find = df_raw['Bz_GSM']
-    peaks = sp.signal.find_peaks(data_to_find, height=3.88, distance=20)
-    # Mostrar la cantidad de picos en Streamlit
-    st.text(f"Los Datos Anomalos son: {len(peaks[0])}")
+   url="https://danielperez.pythonanywhere.com/get_past_peeks/"
+    resp = requests.get(url)
+    
+    df = pd.DataFrame(resp.json()["DataFrame"].values(),index=resp.json()["DataFrame"].keys())
+    
+    time = np.array(resp.json()['time'])
+    lista = np.array(df)
+    value = np.array(lista[time])
 
 
     # Crear una figura para la gráfica
     fig, ax = plt.subplots()
-    ax.plot(data_to_find)
-    ax.plot(peaks[0], data_to_find[peaks[0]], "o")
+    ax.plot(lista)
+    ax.plot(time, value, "o")
 
     return fig  # Devuelve la figura
 
