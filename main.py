@@ -31,9 +31,11 @@ def pagina_bienvenida():
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
     # Botón
-    st.button("¡1.- Daño a los sistemas satelitales!"), st.button("¡2.- Perturbaciones en la propagación de las ondas de radio!")
+    st.button("¡1.- Daño a los sistemas satelitales!") 
+    st.button("¡2.- Perturbaciones en la propagación de las ondas de radio!")
     st.button("¡3.- Cambio en la órbita de los satélites")
     st.button("¡4.-  Errores de navegación")
+    st.button("¡5.-  Tormentas geomagnéticas")
         
 
 # Función para la página de información (Opción 2)
