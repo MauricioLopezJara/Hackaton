@@ -83,7 +83,7 @@ def predict():
     url="https://DanielPerez.pythonanywhere.com/predictions/"
     resp = requests.get(url)
     
-    df = pd.DataFrame({'fechaas':resp.json()["fechas"],'pronostico':resp.json()["pronostico"]})
+    df = pd.DataFrame(resp.json()['pronostico'])
     
     # Crear una figura para la gráfica
     fig, ax = plt.subplots()
