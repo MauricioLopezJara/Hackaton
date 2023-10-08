@@ -1,7 +1,5 @@
 import streamlit as st
 
-# Variable de estado para controlar la página actual
-pagina_actual = "Bienvenida"
 # Configuración de la página
 st.set_page_config(
     page_title="NASA Reconexión Magnética",
@@ -13,7 +11,6 @@ st.set_page_config(
 # Función para la página de bienvenida
 def pagina_bienvenida():
     global pagina_actual
-    pagina_actual = "Bienvenida"
     # Crea 3 columnas
     left_col, mid_col, right_col = st.columns(3)
 
@@ -51,7 +48,6 @@ def pagina_contacto():
     Cuatro_col.image("4.png", width=110)
     Cinco_col.image("5.png", width=110)
     Seis_col.image("6.png", width=110)
-
 
 
 # Título del menú
