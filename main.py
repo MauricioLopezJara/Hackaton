@@ -34,10 +34,10 @@ def Datos():
 
     # Agregar un botón para ejecutar el código
     if st.button("Ejecutar Análisis de Datos"):
-        #fig = analyze_  data()  # Llama a la función de análisis y obtén la figura
+        fig = analyze_data()  # Llama a la función de análisis y obtén la figura
 
         # Muestra la figura en Streamlit
-        #st.pyplot(fig)
+        st.pyplot(fig)
 
 # Función para analizar los datos
 def analyze_data():
