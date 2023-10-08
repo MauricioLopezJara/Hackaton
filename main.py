@@ -41,6 +41,7 @@ def pagina_contacto():
         st.image("1.png", width=110)
         st.markdown("**Nombre:** Juan Pérez")
         st.markdown("**Cargo:** Desarrollador web")
+        st.markdown(f'<a href="http://www.faceboock.com">link<\a>')
 
     with Dos_col:
         st.image("2.png", width=110)
