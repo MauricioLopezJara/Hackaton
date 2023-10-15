@@ -5,7 +5,6 @@ import scipy as sp
 import requests
 import numpy as np
 
-
 # Configuración de la página
 st.set_page_config(
     page_title="NASA Reconexión Magnética",
