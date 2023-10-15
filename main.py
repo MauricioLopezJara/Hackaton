@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import scipy as sp
 import requests
 import numpy as np
-from DoctorStrange import funcion_de_DoctorStrange
+import DoctorStrange
 
 
 # Configuración de la página
