@@ -44,9 +44,8 @@ def pagina_bienvenida():
         st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
     if st.button("5.- ¡Tormentas geomagnéticas"):
         st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")    
-   
     if st.button("¡Filtro AR!"):
-        resultado = funcion_de_DoctorStrange()
+        #resultado = funcion_de_DoctorStrange()
         st.success("DoctorStrange.py se ejecutó con éxito")
 
 
