@@ -141,6 +141,15 @@ def pagina_contacto():
         st.markdown("**Apellido:** Montero")
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
+# Carga las imágenes
+imagenes = [
+  st.image('1.png'),
+  st.image('2.png'),
+  st.image('3.png')
+]
+
+# Agrega el carrusel al encabezado
+st.carousel(imagenes)
 
 
 # Título del menú
