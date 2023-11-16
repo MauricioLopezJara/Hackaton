@@ -43,16 +43,6 @@ def pagina_bienvenida():
     if st.button("5.- ¡Tormentas geomagnéticas"):
         st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")    
 
-        # Carga las imágenes
-    imagenes = [
-      st.image('1.png'),
-      st.image('2.png'),
-      st.image('3.png')
-    ]
-
-    # Agrega el carrusel al encabezado
-    st.carousel(imagenes)
-
 # Función para la página de información (Opción 2)
 def Datos():
     st.title("Información sobre Reconexión Magnética")
