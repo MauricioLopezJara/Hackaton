@@ -26,7 +26,7 @@ def pagina_bienvenida():
         "")
     st.write("""La reconexión magnética puede tener varios efectos en los satélites y sistemas espaciales. Éstas son algunas de las formas en que puede afectarles:""")
     # URL del video de YouTube
-    video_url = "https://www.youtube.com/watch?v=ONpF_MA0VqE"
+    video_url = "https://www.youtube.com/watch?v=85YJRNB-oB4"
 
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
